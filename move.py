@@ -32,7 +32,7 @@ def singleServo(self, ID, direcInput, speedSet):
 		self.posUpdate()
 		self.resume()
 
-sc = ServoCtrl()   # Instantiate the object that controls the servo
+sc = singleServo()   # Instantiate the object that controls the servo
 sc.start()  # Start this thread, when the servo does not move, the thread is suspended
 
 def stopWiggle(self):
